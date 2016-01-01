@@ -1,0 +1,25 @@
+﻿body {
+  font-family:Arial,Helvettica,sans-serif;
+  background-color:green;
+}
+
+h1 {
+  font-size:2em;
+  margin:0;
+  padding:0;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+input {
+	width: 140px;
+}
+
+
+.palindromeStyle{
+	background: red;
+}
+
+.notPalindromeStyle{
+	background: grey;
+}
