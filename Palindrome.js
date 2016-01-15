@@ -9,7 +9,7 @@ $(function(){
 		var wordLength = myWord.length;
 		var isPalindrome = true;
 		
-		$('#myOutput').val('');
+		$('#wordOutput').text('');
 		
 		if (wordLength === 0) {
 			alert("Please input a word");
@@ -25,11 +25,11 @@ $(function(){
 		}
 	
 		if (isPalindrome === true) {
-			$('#myOutput').append(myWord + " is a Palindrome");
+			$('#wordOutput').append(myWord + " is a Palindrome");
 			$('body').addClass("palindromeStyle")
 		} 
 		else {
-			$('#myOutput').append(myWord + " is NOT a Palindrome");
+			$('#wordOutput').append(myWord + " is NOT a Palindrome");
 			$('body').addClass("notPalindromeStyle")
 		}
 	
@@ -37,7 +37,7 @@ $(function(){
 	
 	$("#resetting").click(function(){
 		$('#wordInput').val([]);
-		$('#myOutput').empty();		
+		$('#wordOutput').empty();		
 		$('body').removeClass();
 	})
 	
